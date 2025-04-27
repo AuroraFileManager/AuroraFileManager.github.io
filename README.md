@@ -1,7 +1,8 @@
-# 🌟 AuroraFile – PHP File Manager
+# 🌟 Aurora FileManager – PHP File Manager
 
-**AuroraFile** is a lightweight, modern PHP file manager built for easy file management with style.  
-It features a beautiful iOS-like glass UI, recursive malware scanning, quick actions, and dark mode toggle.
+**Aurora FileManager** is a modern PHP file manager focused on performance and security.
+It offers quick file operations, malware detection, permission management, and a responsive dark mode interface.
+
 
 ---
 
@@ -56,7 +57,7 @@ AuroraFile is open-sourced under the [MIT License](LICENSE).
 ## 💬 Feedback & Contributions
 
 Contributions, issues, and feature requests are welcome!  
-Feel free to open a [pull request](https://github.com/your-repo/aurorafile/pulls) or [issue](https://github.com/your-repo/aurorafile/issues).
+Feel free to open a [pull request](https://github.com/AuroraFileManager/AuroraFileManager.github.io/pulls) or [issue](https://github.com/AuroraFileManager/AuroraFileManager.github.io/issues).
 
 ---
 
