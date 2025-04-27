@@ -14,7 +14,7 @@
       padding: 0;
     }
     .hero {
-      min-height: 100vh;
+      min-height: 80vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -50,6 +50,35 @@
       margin: 0 0.25em;
       display: inline-block;
     }
+    .features-section {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #fff;
+    }
+    .features-section h2 {
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    .screenshot {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .terminal {
+      background: #212529;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 250px;
+      overflow: hidden;
+    }
     footer {
       padding: 1rem;
       text-align: center;
@@ -57,15 +86,17 @@
       background: #fff;
       color: #6c757d;
       box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
 
+<!-- Hero -->
 <div class="hero animate__animated animate__fadeIn">
   <h1 class="animate__animated animate__fadeInDown">🚀 AuroraFile</h1>
   <p class="animate__animated animate__fadeInUp animate__delay-1s">
-    A modern, trustable PHP File Manager with iOS‑style UI, malware scanning, and dark mode.
+    A powerful PHP file manager with advanced security scanning and fast file operations.
   </p>
 
   <div class="d-flex gap-3 flex-wrap justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
@@ -80,16 +111,55 @@
   <div class="badges animate__animated animate__fadeIn animate__delay-3s">
     <span class="badge-custom">MIT License</span>
     <span class="badge-custom">Open Source</span>
-    <span class="badge-custom">Safe & Trusted</span>
+    <span class="badge-custom">No Ads – 100% Clean</span>
   </div>
 </div>
 
+<!-- Features Section -->
+<section class="features-section">
+  <h2 class="animate__animated animate__fadeInUp">📦 Features</h2>
+
+  <div class="terminal animate__animated animate__fadeInUp animate__delay-1s" id="terminal">
+    <p id="terminal-text">Loading...</p>
+  </div>
+
+  <img src="screenshot1.png" alt="AuroraFile Screenshot" class="screenshot animate__animated animate__fadeInUp animate__delay-2s">
+</section>
+
 <footer>
-  © <?=date('Y')?> AuroraFile — Open-source under MIT License
+  © 2024 AuroraFile — Open-source under MIT License
 </footer>
 
 <!-- FontAwesome for icons -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+
+<script>
+const terminalLines = [
+  "AuroraFile v2.2",
+  "$ Fast uploads and downloads",
+  "$ Create, edit, delete files & folders",
+  "$ Recursive malware scanner",
+  "$ Backdoor detection (PHP, Webshells)",
+  "$ Change file permissions (CHMOD)",
+  "$ Full dark mode support",
+  "$ Mobile-friendly UI",
+  "$ No dependencies, pure PHP",
+  "$ MIT Licensed — Safe & Free"
+];
+
+let terminal = document.getElementById('terminal-text');
+let index = 0;
+
+function typeLine() {
+  if (index < terminalLines.length) {
+    terminal.innerHTML += terminalLines[index] + "<br/>";
+    index++;
+    setTimeout(typeLine, 500);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", typeLine);
+</script>
 
 </body>
 </html>
