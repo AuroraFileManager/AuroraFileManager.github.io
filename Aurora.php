@@ -1,6 +1,6 @@
 <?php
 
-const APP_NAME = 'AuroraFile';
+const APP_NAME = 'Aurora FileManager';
 const SCAN_READ_LIMIT = 200_000; 
 
 const MALWARE_SIGS = [
