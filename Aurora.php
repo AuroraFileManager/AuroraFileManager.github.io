@@ -3,10 +3,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 date_default_timezone_set('UTC');
 const APP_NAME        = 'Aurora';
-const APP_VERSION     = '2';
+const APP_VERSION     = '3';
 const UPDATE_URL      = 'http://aurora-fm.xyz/update.php';
 const SCAN_READ_LIMIT = 5000;
-$current_version = '2';
+$current_version = '3';
 if (version_compare(PHP_VERSION, '5.4.0', '<')) {
     die('PHP version 5.4 or higher required');
 }
