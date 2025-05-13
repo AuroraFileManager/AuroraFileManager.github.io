@@ -1785,8 +1785,18 @@ setTimeout(() => alert.remove(), 3000);
 <?php endif; ?>
 </script>
 
+<!-- Slide Up Button -->
+<button id="slideUpBtn" class="btn btn-primary rounded-circle position-fixed" style="bottom: 100px; right: 20px; display: none; z-index: 1000;">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Footer Toggle Button -->
+<button id="footerToggleBtn" class="btn btn-primary rounded-circle position-fixed" style="bottom: 20px; right: 20px; z-index: 1001;">
+    <i class="fas fa-info"></i>
+</button>
+
 <!-- Footer -->
-<footer class="bg-dark text-light py-4 fixed-bottom">
+<footer id="footer" class="bg-dark text-light py-4 fixed-bottom" style="display: none; transition: all 0.3s ease;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -1818,7 +1828,37 @@ setTimeout(() => alert.remove(), 3000);
         </div>
     </div>
 </footer>
+
+<script>
+document.getElementById('footerToggleBtn').addEventListener('click', function() {
+    const footer = document.getElementById('footer');
+    if (footer.style.display === 'none') {
+        footer.style.display = 'block';
+        this.innerHTML = '<i class="fas fa-times"></i>';
+    } else {
+        footer.style.display = 'none';
+        this.innerHTML = '<i class="fas fa-info"></i>';
+    }
+});
+</script>
 <div style="margin-bottom: 100px;"></div> <!-- Add spacing to prevent content from being hidden behind footer -->
+
+<script>
+// Show slide up button when scrolling down
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("slideUpBtn").style.display = "block";
+    } else {
+        document.getElementById("slideUpBtn").style.display = "none";
+    }
+};
+
+// Slide up button click handler
+document.getElementById("slideUpBtn").onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+</script>
 
 </body>
 </html>
