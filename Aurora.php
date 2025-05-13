@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 date_default_timezone_set('UTC');
 const APP_NAME        = 'Aurora';
-const APP_VERSION     = '1.0.0';
+const APP_VERSION     = '2.0.0';
 const UPDATE_URL      = 'http://aurora-fm.xyz/update.php';
 const SCAN_READ_LIMIT = 5000;
 $current_version = SCAN_READ_LIMIT;
