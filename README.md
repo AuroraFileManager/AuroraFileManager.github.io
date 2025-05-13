@@ -3,6 +3,11 @@
 **Aurora FileManager** is a modern PHP file manager focused on performance and security.
 It offers quick file operations, malware detection, permission management, and a responsive dark mode interface.
 
+# Support us :)
+** USDT TRC20 : TBiJTyy2SffVSdvYaKrGS8oCA56AoYdEVK **
+** ETH : 0x19EF3A229ffB0A95BA3456352F89B01E9DeA1aeE**
+** BTC : bc1q04066kdvs7czvg866qh2rysmahtuwlxppxnv8u**
+
 
 ---
 
