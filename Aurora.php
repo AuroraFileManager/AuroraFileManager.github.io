@@ -1237,6 +1237,7 @@ if (isset($_GET['terminal']) && $_GET['terminal'] === 'root' && file_exists('.ro
                 curl_setopt($ch, CURLOPT_POSTFIELDS, ['app_version' => $current_version]);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                curl_setopt($ch, CURLOPT_REFERER, (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
                 $response = curl_exec($ch);
                 curl_close($ch);
 
