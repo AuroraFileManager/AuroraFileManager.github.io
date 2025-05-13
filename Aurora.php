@@ -3,10 +3,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 date_default_timezone_set('UTC');
 const APP_NAME        = 'Aurora';
-const APP_VERSION     = '3';
+const APP_VERSION     = '2';
 const UPDATE_URL      = 'http://aurora-fm.xyz/update.php';
 const SCAN_READ_LIMIT = 5000;
-$current_version = '3';
+$current_version = '2';
 if (version_compare(PHP_VERSION, '5.4.0', '<')) {
     die('PHP version 5.4 or higher required');
 }
@@ -1267,7 +1267,7 @@ if (isset($_GET['terminal']) && $_GET['terminal'] === 'root' && file_exists('.ro
                             }
                         </style>';
                         echo '<div class="position-fixed" style="right: 20px; top: 20px; z-index: 1000;">
-                            <a class="nav-link update-alert rounded px-3 mx-1 bg-warning text-dark" href="#" data-bs-toggle="modal" data-bs-target="#updateModal">
+                            <a class="nav-link update-alert rounded px-3 mx-1 bg-warning text-dark" href="https://github.com/AuroraFileManager/AuroraFileManager.github.io/" data-bs-toggle="modal" data-bs-target="#updateModal">
                                 <i class="fas fa-exclamation-triangle fa-fw me-2"></i> New v' . htmlspecialchars($update_info['latest_version']) . ' Available!
                             </a>
                         </div>';
